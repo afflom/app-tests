@@ -1,0 +1,20 @@
+{
+  "name": "zero-point-storage",
+  "version": "1.0.0",
+  "description": "A fixed-size coordinate system for data storage using mathematical universe",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@uor-foundation/math-ts-core": "^0.1.0",
+    "@uor-foundation/mcp-server": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.3",
+    "jest": "^30.0.2",
+    "ts-jest": "^29.4.0"
+  }
+}

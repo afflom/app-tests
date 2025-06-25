@@ -1,0 +1,13 @@
+{
+  "name": "rna-folding-validation",
+  "version": "1.0.0",
+  "description": "RNA folding validation using math-ts-core",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test-folding.js"
+  },
+  "dependencies": {
+    "@uor-foundation/math-ts-core": "^0.1.0"
+  }
+}
