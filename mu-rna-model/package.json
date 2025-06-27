@@ -1,0 +1,44 @@
+{
+  "name": "mu-rna-model",
+  "version": "1.0.0",
+  "description": "Mathematical Universe RNA Model - An algebraic and geometric framework for RNA folding",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "format": "prettier --write \"src/**/*.ts\" \"examples/**/*.ts\" \"tests/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\" \"examples/**/*.ts\" \"tests/**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\" \"examples/**/*.ts\"",
+    "lint:fix": "eslint \"src/**/*.ts\" \"examples/**/*.ts\" --fix",
+    "check": "npm run typecheck && npm run lint && npm run format:check",
+    "example:basic": "npm run build && node dist/examples/basic-usage.js",
+    "example:viz": "npm run build && node dist/examples/visualization.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "RNA",
+    "folding",
+    "clifford-algebra",
+    "e8",
+    "fiber-bundle",
+    "homology",
+    "mathematical-universe"
+  ],
+  "author": "MU:RNA Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.5.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  }
+}
